@@ -1,0 +1,18 @@
+.emptyView {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emptyView h2 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.emptyImage {
+  height: 200px;
+  @media (min-width: 768px) {
+    height: 300px;
+  }
+}

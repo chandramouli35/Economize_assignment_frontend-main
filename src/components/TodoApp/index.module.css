@@ -1,0 +1,152 @@
+.todoApp {
+  height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+ 
+  border-radius: 6px;
+  font-size: 20px;
+  
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.date {
+  font-family: "monospace";
+  color: lightskyblue;
+  font-style: "Roboto";
+  margin: ;
+  margin-top: 10px;
+}
+
+.tabBox {
+}
+
+.tabButton {
+  padding: 10px;
+  border: 0px;
+  border-bottom: 0px;
+  border-radius: 6px;
+  background-color: transparent;
+  margin: 2px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+}
+
+.activeTabButton {
+  padding: 10px;
+  border: 0px;
+  border-bottom:0px;
+  border-radius: 6px;
+  background-color: transparent;
+  color: lightslategrey;
+  margin: 2px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+}
+
+.inputBox {
+  border: 0px solid grey;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.input {
+  height: 50px;
+  flex-grow: 1;
+  margin-right: 10px;
+  max-width: 700px;
+  padding: 0 20px;
+  border: 0;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  border: 1px solid #bfbfbf;
+  background-color: white;
+  outline: none;
+}
+
+::placeholder {
+  font-size: 15px;
+}
+
+.addButton {
+  background-color: rgb(255, 162, 0);
+  border-radius: 4px;
+  border: 0;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.todoListContainer {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.taskHead {
+  font-family:"Roboto";
+  text-decoration: underline;
+}
+
+.errorView {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.retryBtn {
+}
+
+.badge {
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  color: beige;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  transition: 1s;
+  animation: flux .5s linear infinite alternate;
+}
+
+@keyframes flux {
+  0% {
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.badge:hover {
+}

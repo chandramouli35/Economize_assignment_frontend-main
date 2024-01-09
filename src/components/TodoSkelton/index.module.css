@@ -1,0 +1,42 @@
+@keyframes flux {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.todoItem {
+  height: 50px;
+  background-color: rgb(222, 212, 212);
+  display: flex;
+  align-items: center;
+  border: 1px solid #bfbfbf;
+  border-radius: 4px;
+  animation: flux 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: grey;
+  margin-left: 20px;
+}
+
+.para {
+  flex-grow: 1;
+  background-color: grey;
+  height: 40%;
+  margin: 0 20px;
+}
+
+.btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: grey;
+  margin-right: 20px;
+}
